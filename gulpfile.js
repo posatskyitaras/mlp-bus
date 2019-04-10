@@ -100,6 +100,7 @@ gulp.task('serve', gulp.series('clean', 'html', 'sass', 'css', 'scripts', 'image
 
     gulp.watch("src/*.html", gulp.series('html'));
     gulp.watch("src/sass/*.scss", gulp.series('sass'));
+    gulp.watch("src/css/*.css", gulp.series('css'));
     gulp.watch('src/js/*.js', gulp.series('scripts'));
     gulp.watch('src/images/*', gulp.series('images'));
     gulp.watch('src/fonts/*', gulp.series('fonts'));        

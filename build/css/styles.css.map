@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.scss"],"names":[],"mappings":"AAAA,yBACI,cACI,WAAA","file":"styles.css","sourcesContent":["@media (max-width: 767px) {\r\n    .modal-dialog {\r\n        margin-top: 70px;\r\n    }\r\n}\r\n"]}
