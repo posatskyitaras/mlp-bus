@@ -5,31 +5,36 @@
       <h4 class="modal-title">Редагування населеного пункту</h4>
     </div>
     <div class="modal-body">
-
       <div class="form-group">
-        <input type="email" class="form-control rounded" placeholder="Введіть назву міста">
-      </div>
-      <div class="form-group">
-        <input type="email" class="form-control rounded" placeholder="Введіть назву області">
-      </div>
-      <div class="form-group">
+        <input type="email" class="form-control rounded" placeholder="Введіть назву міста">     
+        <input type="email" class="form-control rounded" placeholder="Введіть назву області">      
         <input type="email" class="form-control rounded" placeholder="Введіть назву країни">
+
+        <div class="btn-group m-r select-language">
+          <button data-toggle="dropdown" class="btn btn-sm btn-default dropdown-toggle select-language" aria-expanded="false">
+            <span class="dropdown-label">Україна</span> 
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu dropdown-select">           
+              <li class="active"><a href="#"><input type="radio" name="d-s-r">Україна</a></li>
+              <li class=""><a href="#"><input type="radio" name="d-s-r">Polska</a></li>
+          </ul>
+        </div>
+
       </div>
-
-
-      <div class="form-group">
-        <label>Відображення</label>
-        <label class="switch">
-          <input type="checkbox">
-          <span></span>
-        </label>
+      <div class="form-group-checkbox">
+        <label class="col-md-3 col-xs-4 control-label">Відображати</label>
+        <div class="col-md-9 col-xs-8">
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span></span>
+          </label>
+        </div>
       </div>
-
-
     </div>
     <div class="modal-footer">
-      <a href="#" class="btn btn-default" data-dismiss="modal">Закрити</a>
-      <a href="#" class="btn btn-primary">Зберегти</a>
+      <a href="#" class="btn btn-default btn-rounded" data-dismiss="modal">Закрити</a>
+      <a href="#" class="btn btn-primary btn-rounded">Зберегти</a>
     </div>
   </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->

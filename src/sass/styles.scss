@@ -1,23 +1,45 @@
 @media (max-width: 767px) {
-    .modal-dialog {
-        margin-top: 70px;
-    }
+  .modal-dialog {
+    margin-top: 70px;
+  }
 }
 
 .modal-content {
-    .modal-header{
-        background-color: #65bd77;
-        .close {
-            color: #fff;
-            opacity: 1;
-            &:hover {
-                color: #717171;
-                text-shadow: none;
-            }
-        }
-        h4 {
-            color: #fff;
-            text-align: center;
-        }
+  .modal-header {
+    background-color: #65bd77;
+    .close {
+      color: #fff;
+      opacity: 1;
+      &:hover {
+        color: #717171;
+        text-shadow: none;
+        outline: none;
+      }
     }
+    h4 {
+      color: #fff;
+      text-align: center;
+    }
+  }
+  .modal-body {
+    input {
+      margin-bottom: 15px;
+    }
+  }
+  .select-language {
+    width: 100%;
+    .dropdown-select {
+      width: 100%;
+    }
+  }
+  .form-group-checkbox {
+    padding-bottom: 30px;
+    .control-label {
+      margin: 0;
+      top: 6px;
+    }
+  }
+  .switch input {
+    cursor: pointer;
+  }
 }
