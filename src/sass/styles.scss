@@ -30,7 +30,19 @@
     width: 100%;
     .dropdown-select {
       width: 100%;
+      border: none;
+      box-shadow: none;
+      padding: 2px 0;
+      li {
+        :last-child {
+          margin-top: 0;
+          margin-bottom: 5px;
+        }
+      }
     }
+  }
+  .rounded-item {
+    border-radius: 500px;
   }
   .form-group-checkbox {
     padding-bottom: 30px;
