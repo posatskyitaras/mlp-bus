@@ -50,6 +50,30 @@
   }
 }
 
+.header-flight {
+  font-size: 16px;
+}
+
+.panel-departure {
+  width: 65%;  
+  margin: 0 auto;
+  margin-top: 15px;
+  
+}
+
+.departure-time {
+  padding-right: 5px;
+}
+
+.group-cost-of-travel {
+  margin-bottom: 0;
+  input {
+    width: 132px;
+    display: inline-block;
+   }
+}
+
+
 .add-flight {
   padding-top: 35px;
   &:first-child {
@@ -82,13 +106,6 @@
   width: 100%;
 }
 
-.separation-line {
-  height: 2px;
-  background-color: #e8e8e8;
-  margin-top: 50px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
 .goes-to {
   padding-top: 15px;
 }
