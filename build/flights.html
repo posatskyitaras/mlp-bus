@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Автобуси</title>
+  <title>Додавання рейсу</title>
   <meta name="description"
     content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -11,10 +11,13 @@
   <link rel="stylesheet" href="css/animate.css" type="text/css" />
   <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
   <link rel="stylesheet" href="css/font.css" type="text/css" />
-  <link rel="stylesheet" href="js/calendar/bootstrap_calendar.css" type="text/css" />
+  <link rel="stylesheet" href="js/select2/select2.css" type="text/css" />
+  <link rel="stylesheet" href="js/select2/theme.css" type="text/css" />
+  <link rel="stylesheet" href="js/fuelux/fuelux.css" type="text/css" />
+  <link rel="stylesheet" href="js/datepicker/datepicker.css" type="text/css" />
+  <link rel="stylesheet" href="js/slider/slider.css" type="text/css" />
   <link rel="stylesheet" href="css/app.css" type="text/css" />
   <link rel="stylesheet" href="css/styles.css">
-
   <!--[if lt IE 9]>
     <script src="js/ie/html5shiv.js"></script>
     <script src="js/ie/respond.min.js"></script>
@@ -137,13 +140,13 @@
                   <ul class="nav">
                     <li>
                       <a href="location.html" class="active">
-                          <i class="fa fa-rss-square icon">
+                        <i class="fa fa-rss-square icon">
                           <b class="bg-danger"></b>
                         </i>
                         <span>Нас. пункти</span>
                       </a>
                     </li>
-                    <li class="active">
+                    <li>
                       <a href="buses.html" class="active">
                         <i class="fa fa-columns icon">
                           <b class="bg-warning"></b>
@@ -159,7 +162,7 @@
                         <span>Додати рейс</span>
                       </a>
                     </li>
-                    <li>
+                    <li class="active">
                       <a href="flights.html" class="active">
                         <i class="fa fa-file-text icon">
                           <b class="bg-primary dker"></b>
@@ -217,149 +220,19 @@
         <!-- /.aside -->
 
         <section id="content">
-          <section class="hbox stretch">
-            <aside>
-              <section class="vbox">
-                <header class="header bg-white b-b clearfix">
-                  <div class="row m-t-sm">
-                    <div class="col-sm-8 m-b-xs">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-default" title="Refresh"><i
-                            class="fa fa-refresh"></i></button>
-                        <button type="button" class="btn btn-sm btn-default" title="Remove"><i
-                            class="fa fa-trash-o"></i></button>
-                      </div>
-                      <a href="add_buses.html" data-toggle="ajaxModal" class="btn btn-sm btn-default"><i
-                          class="fa fa-plus"></i> Додати автобус</a>
-                    </div>
-                    <div class="col-sm-4 m-b-xs">
-                      <div class="input-group">
-                        <input type="text" class="input-sm form-control" placeholder="Пошук">
-                        <span class="input-group-btn">
-                          <button class="btn btn-sm btn-default" type="button">Go!</button>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </header>
-                <section class="scrollable wrapper w-f">
-                  <section class="panel panel-default">
-                    <div class="table-responsive">
-                      <table class="table table-striped m-b-none">
-                        <thead>
-                          <tr>
-                            <th width="20"><input type="checkbox"></th>
-                            <th width="20"></th>
-                            <th class="th-sortable" data-toggle="class">Автобус
-                              <span class="th-sort">
-                                <i class="fa fa-sort-down text"></i>
-                                <i class="fa fa-sort-up text-active"></i>
-                                <i class="fa fa-sort"></i>
-                              </span>
-                            </th>
-                            <th>Медель</th>
-                            <th>Кількість місць</th>
-                            <th width="30"><i class="fa fa-eye"></i></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><input type="checkbox" name="post[]" value="2"></td>
-                            <td><a href="buses_edit.html" data-toggle="ajaxModal"><i class="fa fa-edit"></i></a></td>
-                            <td>Scania</td>
-                            <td>K113</td>
-                            <td>51</td>
-                            <td>
-                              <a href="#" class="active" data-toggle="class"><i
-                                  class="fa fa-check text-success text-active"></i><i
-                                  class="fa fa-times text-danger text"></i></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><input type="checkbox" name="post[]" value="3"></td>
-                            <td><a href="buses_edit.html" data-toggle="ajaxModal"><i class="fa fa-edit"></i></a></td>
-                            <td>Neoplan</td>
-                            <td>116</td>
-                            <td>53</td>
-                            <td>
-                              <a href="#" data-toggle="class"><i class="fa fa-check text-success text-active"></i><i
-                                  class="fa fa-times text-danger text"></i></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><input type="checkbox" name="post[]" value="4"></td>
-                            <td><a href="buses_edit.html" data-toggle="ajaxModal"><i class="fa fa-edit"></i></a></td>
-                            <td>Mercedes-Benz</td>
-                            <td>Clubstar atego</td>
-                            <td>35</td>
-                            <td>
-                              <a href="#" class="active" data-toggle="class"><i
-                                  class="fa fa-check text-success text-active"></i><i
-                                  class="fa fa-times text-danger text"></i></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><input type="checkbox" name="post[]" value="4"></td>
-                            <td><a href="buses_edit.html" data-toggle="ajaxModal"><i class="fa fa-edit"></i></a></td>
-                            <td>Van Hool Astron</td>
-                            <td>916s</td>
-                            <td>63</td>
-                            <td>
-                              <a href="#" class="active" data-toggle="class"><i
-                                  class="fa fa-check text-success text-active"></i><i
-                                  class="fa fa-times text-danger text"></i></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><input type="checkbox" name="post[]" value="5"></td>
-                            <td><a href="buses_edit.html" data-toggle="ajaxModal"><i class="fa fa-edit"></i></a></td>
-                            <td>Iveco</td>
-                            <td>EuroCargo</td>
-                            <td>38</td>
-                            <td>
-                              <a href="#" class="active" data-toggle="class"><i
-                                  class="fa fa-check text-success text-active"></i><i
-                                  class="fa fa-times text-danger text"></i></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><input type="checkbox" name="post[]" value="6"></td>
-                            <td><a href="buses_edit.html" data-toggle="ajaxModal"><i class="fa fa-edit"></i></a></td>
-                            <td>MAN</td>
-                            <td>11.230 AYATS</td>
-                            <td>37</td>
-                            <td>
-                              <a href="#" class="active" data-toggle="class"><i
-                                  class="fa fa-check text-success text-active"></i><i
-                                  class="fa fa-times text-danger text"></i></a>
-                            </td>
-                          </tr>
+          <section class="vbox">
+            <header class="header bg-white b-b b-light">
+              <p class="header-flight"><i class="fa fa-clock-o"></i> Додати рейс</p>
+            </header>
+            <section class="scrollable padder">
 
-                        </tbody>
-                      </table>
-                    </div>
-                  </section>
-                </section>
-                <footer class="footer bg-white b-t">
-                  <div class="row text-center-xs">
-                    <div class="col-md-6 hidden-sm">
-                      <p class="text-muted m-t">Відображено 20 з 50</p>
-                    </div>
-                    <div class="col-md-6 col-sm-12 text-right text-center-xs">
-                      <ul class="pagination pagination-sm m-t-sm m-b-none">
-                        <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </footer>
-              </section>
-            </aside>
+
+
+
+
+
+
+            </section>
           </section>
           <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen, open"
             data-target="#nav,html"></a>
