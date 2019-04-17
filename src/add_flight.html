@@ -225,14 +225,11 @@
               <p class="header-flight"><i class="fa fa-clock-o"></i> Додати рейс</p>
             </header>
             <section class="scrollable padder">
-
               <section class="panel panel-default panel-departure">
                 <header class="panel-heading font-bold">Відправлення</header>
-
                 <div class="panel-body">
-
                   <div class="form-group">
-                    <label>Прямує з</label>
+                    <label>Населений пункт</label>
                     <select name="account" class="form-control">
                       <option>Калуш</option>
                       <option>Львів</option>
@@ -242,18 +239,14 @@
                       <option>Łódź</option>
                     </select>
                   </div>
-
                   <div class="form-group">
                     <label>Зупинка</label>
                     <input type="text" class="form-control" id="input-id-1">
                   </div>
-
-
                   <div class="form-group">
                     <label class="departure-time">Виїзд о: </label>
                     <input type="text" class="combodate form-control" data-format="HH:mm" data-template="HH : mm"
                       name="datetime" value="20:30" style="display: none;"><span class="combodate">
-
                       <select class="hour form-control" style="width: auto;">
                         <option value=""></option>
                         <option value="0">00</option>
@@ -281,7 +274,6 @@
                         <option value="22">22</option>
                         <option value="23">23</option>
                       </select>
-
                       <select class="minute form-control" style="width: auto;">
                         <option value=""></option>
                         <option value="0">00</option>
@@ -305,16 +297,79 @@
                 </div>
               </section>
 
-              <div class="container collapse-add-city">
-                <h4>Додати попутнє місто</h4>
-                <a href="#demo" class="btn btn-info" data-toggle="collapse"><i class="fa fa-plus"></i> Додати попутнє
-                  місто</a>
-                <div id="demo" class="collapse">
+              <section class="panel panel-default panel-departure">
+                <header class="panel-heading font-bold">Додати попутнє місто</header>
+                <div class="panel-body passing-city-flight">
 
-                  <div class="passing-city col-xs-12">
-                    <div class="form-group add-flight">
-                      <label class="col-sm-2 control-label">Населений пункт</label>
-                      <div class="col-sm-10">
+                  <section class="scrollable wrapper">
+                    <div class="timeline timeline-add-flight">
+
+                      <article class="timeline-item alt">
+                        <div class="timeline-caption">
+                          <div class="panel panel-default">
+                            <div class="panel-body city-timeline">
+                              <span class="arrow right"></span>
+                              <span class="timeline-icon"><i class="fa fa-clock-o time-icon bg-info"></i></span>
+                              <span class="timeline-date">13:30</span>
+                              <p class="options-font-flight">Калуш</p>
+                              <p>Автостанція Калуш, вулиця Привокзальна; будинок 15</p>
+                              <p class="options-font-flight">120 грн.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="timeline-item alt">
+                        <div class="timeline-caption">
+                          <div class="panel panel-default">
+                            <div class="panel-body city-timeline">
+                              <span class="arrow right"></span>
+                              <span class="timeline-icon"><i class="fa fa-clock-o time-icon bg-info"></i></span>
+                              <span class="timeline-date">14:10</span>
+                              <p class="options-font-flight">Долина</p>
+                              <p>Зупинка Долина, вулиця Привокзальна; будинок 1</p>
+                              <p class="options-font-flight">140 грн.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="timeline-item alt">
+                        <div class="timeline-caption">
+                          <div class="panel panel-default">
+                            <div class="panel-body city-timeline">
+                              <span class="arrow right"></span>
+                              <span class="timeline-icon"><i class="fa fa-clock-o time-icon bg-info"></i></span>
+                              <span class="timeline-date">15:10</span>
+                              <p class="options-font-flight">Стрий</p>
+                              <p>Автостанція Стрий, вулиця Вокзальна; будинок 7Б</p>
+                              <p class="options-font-flight">260 грн.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="timeline-item alt">
+                        <div class="timeline-caption">
+                          <div class="panel panel-default">
+                            <div class="panel-body city-timeline">
+                              <span class="arrow right"></span>
+                              <span class="timeline-icon"><i class="fa fa-clock-o time-icon bg-info"></i></span>
+                              <span class="timeline-date">16:35</span>
+                              <p class="options-font-flight">Львів</p>
+                              <p>Автостанція №8, Двірцева площа; будинок 1</p>
+                              <p class="options-font-flight">290 грн.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+
+                    </div>
+                  </section>
+
+                  <a href="#add-city" class="btn btn-info " data-toggle="collapse"><i class="fa fa-plus"></i> Додати
+                    попутнє місто</a>
+                  <div id="add-city" class="collapse">
+                    <div class="passing-city">
+                      <div class="form-group add-flight">
+                        <label>Прямує з</label>
                         <select name="account" class="form-control">
                           <option>Калуш</option>
                           <option>Львів</option>
@@ -324,21 +379,14 @@
                           <option>Łódź</option>
                         </select>
                       </div>
-                    </div>
-
-                    <div class="form-group add-flight">
-                      <label class="col-sm-2 control-label" for="input-id-1">Зупинка</label>
-                      <div class="col-sm-10">
+                      <div class="form-group">
+                        <label>Зупинка</label>
                         <input type="text" class="form-control" id="input-id-1">
                       </div>
-                    </div>
-
-                    <div class="form-group add-flight">
-                      <label class="col-sm-2 control-label">Відправлення</label>
-                      <div class="col-sm-10">
+                      <div class="form-group">
+                        <label class="departure-time">Виїзд о: </label>
                         <input type="text" class="combodate form-control" data-format="HH:mm" data-template="HH : mm"
                           name="datetime" value="20:30" style="display: none;"><span class="combodate">
-
                           <select class="hour form-control" style="width: auto;">
                             <option value=""></option>
                             <option value="0">00</option>
@@ -366,7 +414,6 @@
                             <option value="22">22</option>
                             <option value="23">23</option>
                           </select>
-
                           <select class="minute form-control" style="width: auto;">
                             <option value=""></option>
                             <option value="0">00</option>
@@ -383,19 +430,17 @@
                             <option value="55">55</option>
                           </select></span>
                       </div>
-                    </div>
-                    <div class="form-group add-flight">
-                      <label class="col-sm-2 control-label" for="input-id-1">Вартість</label>
-                      <div class="col-sm-2">
+                      <div class="form-group group-cost-of-travel">
+                        <label>Вартість</label>
                         <input type="text" class="form-control" id="input-id-1">
                       </div>
-                    </div>
-                    <div class="add-collapse-btn">
-                      <button type="submit" class="btn btn-primary">Зберегти</button>
+                      <div class="add-collapse-btn">
+                        <button type="submit" class="btn btn-primary">Зберегти</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </section>
 
 
               <section class="panel panel-default panel-departure">
@@ -470,7 +515,6 @@
               <section class="panel panel-default panel-departure">
                 <header class="panel-heading font-bold">Автобус</header>
                 <div class="panel-body">
-
                   <div class="form-group buses-add-flight">
                     <label>Виберіть марку автобуса</label>
                     <select name="account" class="form-control">
@@ -482,239 +526,234 @@
                       <option>MAN 11.230 AYATS</option>
                     </select>
                   </div>
-
                   <!-- bus -->
-                  <div class="bus-layout col-xs-12">
-                      <div class="plane">
-      
-                        <div class="bus-driver exit exit--front fuselage"></div>
-      
-                        <ol class="cabin fuselage">
-                          <li class="row row--1">
-                            <ol class="seats" type="A">
-                              <li class="seat">
-                                <input type="checkbox" id="1A" />
-                                <label for="1A">1</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" disabled id="2A" />
-                                <label for="2A">2</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="3A" />
-                                <label for="3A">3</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="4A" />
-                                <label for="4A">4</label>
-                              </li>
-                            </ol>
+                  <div class="plane">
+                    <div class="bus-driver exit exit--front fuselage"></div>
+
+                    <ol class="cabin fuselage">
+                      <li class="row row--1">
+                        <ol class="seats" type="A">
+                          <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1</label>
                           </li>
-                          <li class="row row--2">
-                            <ol class="seats" type="B">
-                              <li class="seat">
-                                <input type="checkbox" id="1B" />
-                                <label for="1B">5</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="2B" />
-                                <label for="2B">6</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="3B" />
-                                <label for="3B">7</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="4B" />
-                                <label for="4B">8</label>
-                              </li>
-                            </ol>
+                          <li class="seat">
+                            <input type="checkbox" disabled id="2A" />
+                            <label for="2A">2</label>
                           </li>
-                          <li class="row row--3">
-                            <ol class="seats" type="C">
-                              <li class="seat">
-                                <input type="checkbox" id="1C" />
-                                <label for="1C">9</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="2C" />
-                                <label for="2C">10</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="3C" />
-                                <label for="3C">11</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="4C" />
-                                <label for="4C">12</label>
-                              </li>
-                            </ol>
+                          <li class="seat">
+                            <input type="checkbox" id="3A" />
+                            <label for="3A">3</label>
                           </li>
-                          <li class="row row--4">
-                            <ol class="seats" type="D">
-                              <li class="seat">
-                                <input type="checkbox" id="1D" />
-                                <label for="1D">13</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="2D" />
-                                <label for="2D">14</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="3D" />
-                                <label for="3D">15</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="4D" />
-                                <label for="4D">16</label>
-                              </li>
-                            </ol>
-                          </li>
-                          <li class="row row--5">
-                            <ol class="seats" type="E">
-                              <li class="seat">
-                                <input type="checkbox" id="1E" />
-                                <label for="1E">17</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="2E" />
-                                <label for="2E">18</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="3E" />
-                                <label for="3E">19</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="4E" />
-                                <label for="4E">20</label>
-                              </li>
-                            </ol>
-                          </li>
-                          <li class="row row--6">
-                            <ol class="seats" type="F">
-                              <li class="seat">
-                                <input type="checkbox" id="1F" />
-                                <label for="1F">21</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="2F" />
-                                <label for="2F">22</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="3F" />
-                                <label for="3F">23</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="4F" />
-                                <label for="4F">24</label>
-                              </li>
-                            </ol>
-                          </li>
-                          <li class="row row--7">
-                            <ol class="seats" type="G">
-                              <li class="seat">
-                                <input type="checkbox" id="1G" />
-                                <label for="1G">25</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="2G" />
-                                <label for="2G">26</label>
-                              </li>
-      
-                              <span class="exit exit-center"></span>
-      
-                            </ol>
-                          </li>
-                          <li class="row row--8">
-                            <ol class="seats" type="H">
-                              <li class="seat">
-                                <input type="checkbox" id="1H" />
-                                <label for="1H">27</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="2H" />
-                                <label for="2H">28</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="3H" />
-                                <label for="3H">29</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="4H" />
-                                <label for="4H">30</label>
-                              </li>
-                            </ol>
-                          </li>
-                          <li class="row row--9">
-                            <ol class="seats" type="I">
-                              <li class="seat">
-                                <input type="checkbox" id="1I" />
-                                <label for="1I">31</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="2I" />
-                                <label for="2I">32</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="3I" />
-                                <label for="3I">33</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="4I" />
-                                <label for="4I">34</label>
-                              </li>
-                            </ol>
-                          </li>
-                          <li class="row row--10">
-                            <ol class="seats" type="J">
-                              <li class="seat">
-                                <input type="checkbox" id="1J" />
-                                <label for="1J">35</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="2J" />
-                                <label for="2J">36</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="3J" />
-                                <label for="3J">37</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="4J" />
-                                <label for="4J">38</label>
-                              </li>
-                            </ol>
-                          </li>
-                          <li class="row row--11">
-                            <ol class="seats" type="K">
-                              <li class="seat">
-                                <input type="checkbox" id="1K" />
-                                <label for="1K">39</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="2K" />
-                                <label for="2K">40</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="3K" />
-                                <label for="3K">41</label>
-                              </li>
-                              <li class="seat">
-                                <input type="checkbox" id="4K" />
-                                <label for="4K">42</label>
-                              </li>
-                            </ol>
+                          <li class="seat">
+                            <input type="checkbox" id="4A" />
+                            <label for="4A">4</label>
                           </li>
                         </ol>
-                        <div class="exit exit--front fuselage"></div>
-                      </div>
-                    </div>
-                    </div>
-                    <!-- bus end -->
+                      </li>
+                      <li class="row row--2">
+                        <ol class="seats" type="B">
+                          <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">5</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="2B" />
+                            <label for="2B">6</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="3B" />
+                            <label for="3B">7</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="4B" />
+                            <label for="4B">8</label>
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="row row--3">
+                        <ol class="seats" type="C">
+                          <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">9</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="2C" />
+                            <label for="2C">10</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="3C" />
+                            <label for="3C">11</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="4C" />
+                            <label for="4C">12</label>
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="row row--4">
+                        <ol class="seats" type="D">
+                          <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">13</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="2D" />
+                            <label for="2D">14</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="3D" />
+                            <label for="3D">15</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="4D" />
+                            <label for="4D">16</label>
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="row row--5">
+                        <ol class="seats" type="E">
+                          <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">17</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="2E" />
+                            <label for="2E">18</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="3E" />
+                            <label for="3E">19</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="4E" />
+                            <label for="4E">20</label>
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="row row--6">
+                        <ol class="seats" type="F">
+                          <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">21</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="2F" />
+                            <label for="2F">22</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="3F" />
+                            <label for="3F">23</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="4F" />
+                            <label for="4F">24</label>
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="row row--7">
+                        <ol class="seats" type="G">
+                          <li class="seat">
+                            <input type="checkbox" id="1G" />
+                            <label for="1G">25</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="2G" />
+                            <label for="2G">26</label>
+                          </li>
+
+                          <span class="exit exit-center"></span>
+
+                        </ol>
+                      </li>
+                      <li class="row row--8">
+                        <ol class="seats" type="H">
+                          <li class="seat">
+                            <input type="checkbox" id="1H" />
+                            <label for="1H">27</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="2H" />
+                            <label for="2H">28</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="3H" />
+                            <label for="3H">29</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="4H" />
+                            <label for="4H">30</label>
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="row row--9">
+                        <ol class="seats" type="I">
+                          <li class="seat">
+                            <input type="checkbox" id="1I" />
+                            <label for="1I">31</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="2I" />
+                            <label for="2I">32</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="3I" />
+                            <label for="3I">33</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="4I" />
+                            <label for="4I">34</label>
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="row row--10">
+                        <ol class="seats" type="J">
+                          <li class="seat">
+                            <input type="checkbox" id="1J" />
+                            <label for="1J">35</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="2J" />
+                            <label for="2J">36</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="3J" />
+                            <label for="3J">37</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="4J" />
+                            <label for="4J">38</label>
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="row row--11">
+                        <ol class="seats" type="K">
+                          <li class="seat">
+                            <input type="checkbox" id="1K" />
+                            <label for="1K">39</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="2K" />
+                            <label for="2K">40</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="3K" />
+                            <label for="3K">41</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="4K" />
+                            <label for="4K">42</label>
+                          </li>
+                        </ol>
+                      </li>
+                    </ol>
+                    <div class="exit exit--front fuselage"></div>
+                  </div>
+                </div>
+                <!-- bus end -->
 
                 </div>
-              </section>              
-
+              </section>
               <div class="add-footer-btn">
                 <button type="submit" class="btn btn-default">Закрити</button>
                 <button type="submit" class="btn btn-primary">Зберегти</button>

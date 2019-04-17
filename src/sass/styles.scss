@@ -55,10 +55,9 @@
 }
 
 .panel-departure {
-  width: 65%;  
+  width: 65%;
   margin: 0 auto;
   margin-top: 15px;
-  
 }
 
 .departure-time {
@@ -70,26 +69,11 @@
   input {
     width: 132px;
     display: inline-block;
-   }
-}
-
-
-.add-flight {
-  padding-top: 35px;
-  &:first-child {
-    padding-top: 15px;
-  }
-  .control-label {
-    text-align: right;
-    padding-top: 7px;
   }
 }
 
 .passing-city {
   margin-top: 15px;
-  background-color: #dff0d8;
-  width: 100%;
-  padding-bottom: 15px;
 }
 
 .сhoose-brand {
@@ -101,42 +85,43 @@
 .buses-add-flight {
   margin-bottom: 0;
 }
-.collapse-add-city {
-  padding-top: 35px;
-  width: 100%;
-}
 
 .goes-to {
   padding-top: 15px;
+}
+
+.passing-city-flight {
+  margin-top: 0px;
+}
+
+.timeline-add-flight {
+  width: 100%;
+  .city-timeline {
+    padding: 0 20px 10px;
+  }
+}
+
+.options-font-flight {
+  font-size: 14px !important;
+  font-weight: 600;
+  :first-child {
+    margin-top: 0 !important;
+  }
 }
 
 @media (max-width: 767px) {
   .modal-dialog {
     margin-top: 70px;
   }
-  .add-flight {
-    padding-top: 10px;
-    margin-bottom: 0;
-    .control-label {
-      padding-top: 0px;
-    }
-  }
-  .collapse-add-city {
-    padding-top: 5px;
-  }
   .separation-line {
-    /*margin-top: 15px;*/
     margin: 25px 15px 10px;
-    
+  }
+  .panel-departure{
+    width: 100%;
   }
 }
 
 /*buses*/
-
-.bus-layout {
-  /*background-color: #fff;*/
-  margin-bottom: 15px;
-}
 
 *,
 *:before,
@@ -405,6 +390,7 @@ ol {
 }
 
 .add-collapse-btn {
+  margin-top: 5px;
   border-top: 0;
   text-align: right;
 }
