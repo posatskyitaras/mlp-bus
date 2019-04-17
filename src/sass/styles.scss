@@ -72,56 +72,62 @@
   }
 }
 
-.passing-city {
-  margin-top: 15px;
+.add-flight {
+  padding-top: 35px;
+  &:first-child {
+    padding-top: 15px;
+  }
+  .control-label {
+    text-align: right;
+    padding-top: 7px;
+  }
 }
 
-.сhoose-brand {
-  font-size: 16px;
-  padding-left: 15px;
-  padding-top: 15px;
+.passing-city {
+  margin-top: 15px;
+  background-color: #dff0d8;
+  width: 100%;
+  padding-bottom: 15px;
 }
 
 .buses-add-flight {
   margin-bottom: 0;
+}
+.collapse-add-city {
+  padding-top: 35px;
+  width: 100%;
 }
 
 .goes-to {
   padding-top: 15px;
 }
 
-.passing-city-flight {
-  margin-top: 0px;
-}
-
-.timeline-add-flight {
-  width: 100%;
-  .city-timeline {
-    padding: 0 20px 10px;
-  }
-}
-
-.options-font-flight {
-  font-size: 14px !important;
-  font-weight: 600;
-  :first-child {
-    margin-top: 0 !important;
-  }
-}
-
 @media (max-width: 767px) {
   .modal-dialog {
     margin-top: 70px;
   }
-  .separation-line {
-    margin: 25px 15px 10px;
+  .add-flight {
+    padding-top: 10px;
+    margin-bottom: 0;
+    .control-label {
+      padding-top: 0px;
+    }
   }
-  .panel-departure{
-    width: 100%;
+  .collapse-add-city {
+    padding-top: 5px;
+  }
+  .separation-line {
+    /*margin-top: 15px;*/
+    margin: 25px 15px 10px;
   }
 }
 
 /*buses*/
+
+.bus-layout {
+  /*background-color: #fff;*/
+  margin-bottom: 15px;
+}
 
 *,
 *:before,
@@ -390,7 +396,44 @@ ol {
 }
 
 .add-collapse-btn {
-  margin-top: 5px;
   border-top: 0;
   text-align: right;
+}
+
+.main-flights-wrapper {
+  .bg-info {
+    background-color: #fff;
+  }
+  .last-wp-price {
+    background-color: #4cc0c1;
+    border-top-right-radius: 22px;
+  }
+  .text-muted-flights {
+    font-size: 16px;
+    color: #717171;
+  }
+}
+
+.wp-panel-flights {
+  border-top-right-radius: 22px;
+  border-top-left-radius: 22px;
+  border: 1px solid #bce8f1;
+  border-bottom: 2px solid #bce8f1;
+}
+
+.next-wp-panel-flights {
+  margin-top: -1px;
+  border-bottom-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border: 1px solid #bce8f1;
+  border-top: 0;
+  padding-bottom: 0;
+  .padder-v {
+    padding: 0;
+    margin: 10px 0 9px;
+  }
+  .btn-default {
+    margin-top:  -6px;
+    margin-bottom: 6px;
+  }
 }
