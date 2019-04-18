@@ -416,12 +416,15 @@ ol {
 }
 
 .main-flights-wrapper {
+  padding-top: 15px;
+  width: 80%;
+  margin: 0 auto;
   .bg-info {
     background-color: #fff;
   }
   .last-wp-price {
     background-color: #4cc0c1;
-    border-top-right-radius: 22px;
+    border-top-right-radius: 22px;  
   }
   .text-muted-flights {
     font-size: 16px;
@@ -444,6 +447,7 @@ ol {
   border-top: 0;
   padding-bottom: 0;
   .padder-v {
+    text-align: left;
     padding: 0;
     margin: 10px 0 9px;
   }
@@ -453,6 +457,37 @@ ol {
   }
 }
 
+.wp-padder {
+  padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .flights-info-text {
+  font-size: 24px;
   color: #4cc0c1 !important;
+  text-align: left;
+}
+.flights-text-small {
+  font-size: 18px;
+  color: #4cc0c1 !important;
+  text-align: left;
+}
+.flights-text-mini {
+  color: #979797;
+  font-size: 90%;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.price-text-small {
+color: #2e3e4e !important;
+font-weight: 500;
+}
+
+.more-details-btn{
+  /*margin-top: -1px !important; */
+}
+
+.next-last-wp-price {
+  padding-left: 5px;
 }
