@@ -78,6 +78,18 @@
 .departure-time {
   padding-right: 5px;
 }
+.include-exclude {
+  padding-top: 15px;
+}
+.include-wrapper {
+  border: 1px solid rgba(50, 50, 50, 0.3) !important;
+  padding: 2px 1px 0;
+  margin-left: 10px;
+}
+
+.icon-include-exclude {
+  font-size: 18px;
+}
 
 .group-cost-of-travel {
   margin-bottom: 0;
@@ -116,26 +128,6 @@
 
 .goes-to {
   padding-top: 15px;
-}
-
-@media (max-width: 767px) {
-  .modal-dialog {
-    margin-top: 70px;
-  }
-  .add-flight {
-    padding-top: 10px;
-    margin-bottom: 0;
-    .control-label {
-      padding-top: 0px;
-    }
-  }
-  .collapse-add-city {
-    padding-top: 5px;
-  }
-  .separation-line {
-    /*margin-top: 15px;*/
-    margin: 25px 15px 10px;
-  }
 }
 
 /*buses*/
@@ -425,7 +417,7 @@ ol {
   }
   .last-wp-price {
     background-color: #4cc0c1;
-    border-top-right-radius: 22px;  
+    border-top-right-radius: 22px;
   }
   .text-muted-flights {
     font-size: 16px;
@@ -447,20 +439,27 @@ ol {
   border: 1px solid #bce8f1;
   border-top: 0;
   padding-bottom: 0;
+  padding-top: 1px;
   .padder-v {
     text-align: left;
-    padding: 0;
-    margin: 10px 0 9px;
-  }
-  .btn-default {
-    margin-top: -6px;
-    margin-bottom: 6px;
   }
 }
 
 .wp-padder {
   padding-top: 5px;
-    padding-bottom: 5px;
+  padding-bottom: 5px;
+}
+.left-block-first {
+  padding-left: 15px !important;
+}
+
+.wp-timeline-city {
+  margin-top: 15px;
+  padding: 0 15px;
+  color: #717171;
+  a {
+    color: #2e3e4e;
+  }
 }
 
 .flights-info-text {
@@ -481,14 +480,36 @@ ol {
 }
 
 .price-text-small {
-color: #2e3e4e !important;
-font-weight: 500;
-}
-
-.more-details-btn{
-  /*margin-top: -1px !important; */
+  color: #2e3e4e !important;
+  font-weight: 500;
 }
 
 .next-last-wp-price {
   padding-left: 5px;
+}
+
+@media (max-width: 767px) {
+  .modal-dialog {
+    margin-top: 70px;
+  }
+  .add-flight {
+    padding-top: 10px;
+    margin-bottom: 0;
+    .control-label {
+      padding-top: 0px;
+    }
+  }
+  .collapse-add-city {
+    padding-top: 5px;
+  }
+  .separation-line {
+    /*margin-top: 15px;*/
+    margin: 25px 15px 10px;
+  }
+  .panel-departure {
+    width: 100%;
+  }
+  .main-flights-wrapper {
+    width: 100%;
+  }
 }
