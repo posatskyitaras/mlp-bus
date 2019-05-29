@@ -130,8 +130,6 @@
   padding-top: 15px;
 }
 
-
-
  /*buses*/
 
  .bus-layout {
@@ -412,6 +410,7 @@ ol {
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
 }
+
 /*
 @media only screen and (max-width: 407px) {
   .exit-center:after {
@@ -431,12 +430,9 @@ ol {
 */
 @media only screen and (max-width: 338px) {
   .exit-center:after {
-    right: -51px;
+    right: -53px;
   }
 }
-
-
-
 /*buses end*/
 
 
