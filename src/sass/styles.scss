@@ -1,4 +1,5 @@
 .modal-content {
+  border-radius: 0 !important;
   .modal-header {
     background-color: #65bd77;
     .close {
@@ -20,6 +21,7 @@
       margin-bottom: 15px;
     }
   }
+
   .select-language {
     width: 100%;
     .dropdown-select {
@@ -29,12 +31,25 @@
       padding: 2px 0;
       li {
         :last-child {
-          margin-top: 0;
-          margin-bottom: 5px;
+          margin-top: 5px;
         }
       }
     }
   }
+
+  .indent-element {
+    padding: 7px;
+  }
+
+  .select-items {
+    margin: 0;
+    padding: 0 !important;
+  }
+
+  .select-indent-element {
+    padding: 6px;
+  }
+
   .rounded-item {
     border-radius: 500px;
   }
@@ -63,6 +78,18 @@
 .departure-time {
   padding-right: 5px;
 }
+.include-exclude {
+  padding-top: 15px;
+}
+.include-wrapper {
+  border: 1px solid rgba(50, 50, 50, 0.3) !important;
+  padding: 2px 1px 0;
+  margin-left: 10px;
+}
+
+.icon-include-exclude {
+  font-size: 18px;
+}
 
 .group-cost-of-travel {
   margin-bottom: 0;
@@ -85,6 +112,7 @@
 
 .passing-city {
   margin-top: 15px;
+  padding: 0 15px;
   background-color: #dff0d8;
   width: 100%;
   padding-bottom: 15px;
@@ -102,33 +130,15 @@
   padding-top: 15px;
 }
 
-@media (max-width: 767px) {
-  .modal-dialog {
-    margin-top: 70px;
-  }
-  .add-flight {
-    padding-top: 10px;
-    margin-bottom: 0;
-    .control-label {
-      padding-top: 0px;
-    }
-  }
-  .collapse-add-city {
-    padding-top: 5px;
-  }
-  .separation-line {
-    /*margin-top: 15px;*/
-    margin: 25px 15px 10px;
-  }
-}
 
-/*buses*/
 
-.bus-layout {
+ /*buses*/
+
+ .bus-layout {
   /*background-color: #fff;*/
   margin-bottom: 15px;
 }
-
+/*
 *,
 *:before,
 *:after {
@@ -137,12 +147,13 @@
 html {
   font-size: 16px;
 }
-
+*/
 .plane {
   margin: 20px auto;
   max-width: 300px;
   color: #333;
-  border: 5px solid #d8d8d8;
+  border: 5px solid #233b7ee6;
+  border-radius: 50px 50px 30px 30px;
 }
 
 .cockpit {
@@ -181,7 +192,7 @@ html {
     font-family: "Arial Narrow", Arial, sans-serif;
     display: block;
     position: absolute;
-    background: green;
+    background: #17a2b8;
     color: white;
     top: 50%;
     transform: translate(0, -50%);
@@ -194,7 +205,7 @@ html {
 .exit-center {
   margin: 0 auto;
   &:after {
-    right: -65px;
+    right: -58px;
   }
 }
 
@@ -207,7 +218,7 @@ html {
       no-repeat;
     height: 32px;
     display: block;
-    margin-top: 10px;
+    margin-top: 28px;
     margin-left: 15px;
   }
   &:before {
@@ -217,10 +228,15 @@ html {
 
 .fuselage {
   /*border-right: 5px solid #d8d8d8;
-  border-left: 5px solid #d8d8d8;*/
+border-left: 5px solid #d8d8d8;*/
   .row {
-    margin-right: 5px;
+    margin-right: 0; /* 5px; */
     margin-left: 0px;
+    display: list-item;
+    &:after,
+    &:before {
+      box-sizing: border-box;
+    }
   }
 }
 
@@ -239,11 +255,11 @@ ol {
 
 .seat {
   display: flex;
-  flex: 0 0 22.28571428571429%;
+  flex: 0 0 20%;
   padding: 5px;
   position: relative;
   &:nth-child(2) {
-    margin-right: 13.28571428571429%;
+    margin-right: 20%;
   }
   input[type="checkbox"] {
     position: absolute;
@@ -251,7 +267,7 @@ ol {
   }
   input[type="checkbox"]:checked {
     + label {
-      background: #8ec165;
+      background: #28a745;
       -webkit-animation-name: rubberBand;
       animation-name: rubberBand;
       animation-duration: 300ms;
@@ -267,7 +283,7 @@ ol {
         content: "X";
         text-indent: 0;
         position: absolute;
-        top: 4px;
+        top: 6px;
         left: 50%;
         transform: translate(-50%, 0%);
       }
@@ -278,15 +294,17 @@ ol {
     }
   }
   label {
+    color: #fff;
+    font-weight: 600 !important;
     display: block;
     position: relative;
     width: 100%;
     text-align: center;
     font-size: 14px;
     font-weight: bold;
-    line-height: 1.5rem;
-    padding: 4px 0;
-    background: #fb6b5b;
+    /*line-height: 1.5rem;*/
+    padding: 6px 0;
+    background: #233b7ee6;
     border-radius: 5px;
     animation-duration: 300ms;
     animation-fill-mode: both;
@@ -296,8 +314,9 @@ ol {
       position: absolute;
       width: 75%;
       height: 75%;
-      top: 1px;
+      top: 4px;
       left: 50%;
+      border: none;
       transform: translate(-50%, 0%);
       background: rgba(255, 255, 255, 0.4);
       border-radius: 3px;
@@ -306,6 +325,12 @@ ol {
       cursor: pointer;
       box-shadow: 0 0 0px 2px #5c6aff;
     }
+  }
+}
+
+.last-row .seat {
+  &:nth-child(2) {
+    margin-right: 0;
   }
 }
 
@@ -387,7 +412,34 @@ ol {
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
 }
+/*
+@media only screen and (max-width: 407px) {
+  .exit-center:after {
+    right: -57px;
+  }
+}
+@media only screen and (max-width: 382px) {
+  .exit-center:after {
+    right: -52px;
+  }
+}
+@media only screen and (max-width: 356px) {
+  .exit-center:after {
+    right: -47px;
+  }
+}
+*/
+@media only screen and (max-width: 338px) {
+  .exit-center:after {
+    right: -51px;
+  }
+}
+
+
+
 /*buses end*/
+
+
 
 .add-footer-btn {
   border-top: 0;
@@ -401,6 +453,9 @@ ol {
 }
 
 .main-flights-wrapper {
+  padding-top: 15px;
+  width: 80%;
+  margin: 0 auto;
   .bg-info {
     background-color: #fff;
   }
@@ -428,12 +483,77 @@ ol {
   border: 1px solid #bce8f1;
   border-top: 0;
   padding-bottom: 0;
+  padding-top: 1px;
   .padder-v {
-    padding: 0;
-    margin: 10px 0 9px;
+    text-align: left;
   }
-  .btn-default {
-    margin-top:  -6px;
-    margin-bottom: 6px;
+}
+
+.wp-padder {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.left-block-first {
+  padding-left: 15px !important;
+}
+
+.wp-timeline-city {
+  margin-top: 15px;
+  padding: 0 15px;
+  color: #717171;
+  a {
+    color: #2e3e4e;
+  }
+}
+
+.flights-info-text {
+  font-size: 24px;
+  color: #4cc0c1 !important;
+  text-align: left;
+}
+.flights-text-small {
+  font-size: 18px;
+  color: #4cc0c1 !important;
+  text-align: left;
+}
+.flights-text-mini {
+  color: #979797;
+  font-size: 90%;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.price-text-small {
+  color: #2e3e4e !important;
+  font-weight: 500;
+}
+
+.next-last-wp-price {
+  padding-left: 5px;
+}
+
+@media (max-width: 767px) {
+  .modal-dialog {
+    margin-top: 70px;
+  }
+  .add-flight {
+    padding-top: 10px;
+    margin-bottom: 0;
+    .control-label {
+      padding-top: 0px;
+    }
+  }
+  .collapse-add-city {
+    padding-top: 5px;
+  }
+  .separation-line {
+    /*margin-top: 15px;*/
+    margin: 25px 15px 10px;
+  }
+  .panel-departure {
+    width: 100%;
+  }
+  .main-flights-wrapper {
+    width: 100%;
   }
 }

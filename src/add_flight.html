@@ -32,7 +32,8 @@
         <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
           <i class="fa fa-bars"></i>
         </a>
-        <a href="#" class="navbar-brand" data-toggle="fullscreen"><img src="images/logo.png" class="m-r-sm">Notebook</a>
+        <a href="#" class="navbar-brand" data-toggle="fullscreen"><img src="images/logo.png"
+            class="m-r-sm">mlp-bus.com</a>
         <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".nav-user">
           <i class="fa fa-cog"></i>
         </a>
@@ -140,7 +141,7 @@
                   <ul class="nav">
                     <li>
                       <a href="location.html" class="active">
-                          <i class="fa fa-rss-square icon">
+                        <i class="fa fa-rss-square icon">
                           <b class="bg-danger"></b>
                         </i>
                         <span>Нас. пункти</span>
@@ -383,7 +384,7 @@
                         <label>Зупинка</label>
                         <input type="text" class="form-control" id="input-id-1">
                       </div>
-                      <div class="form-group">
+                      <div class="form-group group-cost-of-travel">
                         <label class="departure-time">Виїзд о: </label>
                         <input type="text" class="combodate form-control" data-format="HH:mm" data-template="HH : mm"
                           name="datetime" value="20:30" style="display: none;"><span class="combodate">
@@ -430,10 +431,6 @@
                             <option value="55">55</option>
                           </select></span>
                       </div>
-                      <div class="form-group group-cost-of-travel">
-                        <label>Вартість</label>
-                        <input type="text" class="form-control" id="input-id-1">
-                      </div>
                       <div class="add-collapse-btn">
                         <button type="submit" class="btn btn-primary">Зберегти</button>
                       </div>
@@ -441,7 +438,6 @@
                   </div>
                 </div>
               </section>
-
 
               <section class="panel panel-default panel-departure">
                 <header class="panel-heading font-bold">Прибуття</header>
@@ -509,6 +505,11 @@
                         <option value="55">55</option>
                       </select></span>
                   </div>
+                  <label class="include-exclude">Їде в кінцевий пункт </label>
+                  <a href="#" class="active include-wrapper" data-toggle="class">
+                    <i class="fa fa-check text-success text-active icon-include-exclude"></i>
+                    <i class="fa fa-times text-danger text icon-include-exclude"></i>
+                  </a>
                 </div>
               </section>
 
@@ -746,11 +747,73 @@
                           </li>
                         </ol>
                       </li>
+                      <li class="row row--12">
+                        <ol class="seats" type="L">
+                          <li class="seat">
+                            <input type="checkbox" id="1L" />
+                            <label for="1L">43</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="2L" />
+                            <label for="2L">44</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="3L" />
+                            <label for="3L">45</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="4L" />
+                            <label for="4L">46</label>
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="row row--13">
+                        <ol class="seats" type="M">
+                          <li class="seat">
+                            <input type="checkbox" id="1M" />
+                            <label for="1M">47</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="2M" />
+                            <label for="2M">48</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="3M" />
+                            <label for="3M">49</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="4M" />
+                            <label for="4M">50</label>
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="row row--14">
+                        <ol class="seats last-row" type="N">
+                          <li class="seat">
+                            <input type="checkbox" id="1N" />
+                            <label for="1N">51</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="2N" />
+                            <label for="2N">52</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="3N" />
+                            <label for="3N">53</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="4N" />
+                            <label for="4N">54</label>
+                          </li>
+                          <li class="seat">
+                            <input type="checkbox" id="5N" />
+                            <label for="5N">55</label>
+                          </li>
+                        </ol>
+                      </li>
                     </ol>
-                    <div class="exit exit--front fuselage"></div>
                   </div>
-                </div>
-                <!-- bus end -->
+                  <!-- bus end -->
 
                 </div>
               </section>

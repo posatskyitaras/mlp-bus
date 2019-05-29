@@ -5,7 +5,6 @@
       <h4 class="modal-title">Додавання населеного пункту</h4>
     </div>
     <div class="modal-body">
-
       <div class="form-group">
         <input type="email" class="form-control rounded" placeholder="Введіть назву міста">
       </div>
@@ -13,16 +12,20 @@
         <input type="email" class="form-control rounded" placeholder="Введіть назву області">
       </div>
       <div class="btn-group m-r select-language">
-        <button data-toggle="dropdown" class="btn btn-sm btn-default dropdown-toggle select-language rounded" aria-expanded="false">
-          <span class="dropdown-label">Україна</span> 
+        <button data-toggle="dropdown"
+          class="btn btn-sm btn-default dropdown-toggle select-language rounded indent-element" aria-expanded="false">
+          <span class="dropdown-label">Україна</span>
           <span class="caret"></span>
         </button>
-        <ul class="dropdown-menu dropdown-select">           
-            <li><a href="#" class="btn btn-s-md btn-default btn-rounded">Україна</a></li>
-            <li><a href="#" class="btn btn-s-md btn-default btn-rounded">Polska</a></li>
+        <ul class="dropdown-menu dropdown-select select-items">
+          <li><a href="#" class="btn btn-s-md btn-default btn-rounded select-indent-element"><input type="radio"
+                name="d-s-r">Україна</a>
+          </li>
+          <li><a href="#" class="btn btn-s-md btn-default btn-rounded select-indent-element"><input type="radio"
+                name="d-s-r">Polska</a>
+          </li>
         </ul>
       </div>
-
     </div>
     <div class="modal-footer">
       <a href="#" class="btn btn-default btn-rounded" data-dismiss="modal">Закрити</a>
