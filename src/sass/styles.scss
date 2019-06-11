@@ -110,6 +110,10 @@
   }
 }
 
+.close:hover, .close:focus {
+  outline: none;
+}
+
 .passing-city {
   margin-top: 15px;
   padding: 0 15px;
@@ -524,8 +528,17 @@ ol {
   font-weight: 500;
 }
 
+.wp-sum-price {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .next-last-wp-price {
   padding-left: 5px;
+}
+
+.wp-delete-price {
+  padding-top: 5px;
 }
 
 @media (max-width: 767px) {
