@@ -539,6 +539,9 @@ ol {
 
 .wp-delete-price {
   padding-top: 5px;
+  .btn-default {
+   font-size: 14px; 
+  }
 }
 
 @media (max-width: 767px) {
