@@ -60,12 +60,12 @@ gulp.task('css', function() {
 var options = {};
 // Scripts Task
 gulp.task('scripts', function () {
-    return gulp.src('src/js/*.js') 
-        .pipe(plumber()) // моніторингу помилок
-        .pipe(sourcemaps.init()) 
+    return gulp.src('src/js/**/*.*') 
+        //.pipe(plumber()) // моніторингу помилок
+        //.pipe(sourcemaps.init()) 
         //.pipe(minifyJS()) // замінив на uglify-es
-        .pipe(uglify(options)) // використовую це
-        .pipe(sourcemaps.write('.'))
+        //.pipe(uglify(options)) // використовую це
+        //.pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('build/js'))
         .pipe(reload({ stream:true }));
 });

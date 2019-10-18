@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en" class="app">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Tickets</title>
+  <meta name="description"
+    content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/font.css" type="text/css" />
+  <link rel="stylesheet" href="js/calendar/bootstrap_calendar.css" type="text/css" />
+  <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+
+  <link rel="stylesheet" href="css/app.css" type="text/css" />
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--[if lt IE 9]>
+    <script src="js/ie/html5shiv.js"></script>
+    <script src="js/ie/respond.min.js"></script>
+    <script src="js/ie/excanvas.js"></script>
+  <![endif]-->
+</head>
+
+<body class="">
+  <section class="vbox">
+    <header class="bg-dark dk header navbar navbar-fixed-top-xs">
+      <div class="navbar-header aside-md">
+        <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#" class="navbar-brand" data-toggle="fullscreen"><img src="images/logo.png"
+            class="m-r-sm">mlp-bus.com</a>
+        <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".nav-user">
+          <i class="fa fa-cog"></i>
+        </a>
+      </div>
+      <ul class="nav navbar-nav hidden-xs">
+        <li class="dropdown">
+          <section class="dropdown-menu aside-xl on animated fadeInLeft no-borders lt">
+            <div class="wrapper lter m-t-n-xs">
+              <a href="#" class="thumb pull-left m-r">
+                <img src="images/avatar.jpg" class="img-circle">
+              </a>
+              <div class="clear">
+                <a href="#"><span class="text-white font-bold">@Mike Mcalidek</a></span>
+                <small class="block">Art Director</small>
+                <a href="#" class="btn btn-xs btn-success m-t-xs">Upgrade</a>
+              </div>
+            </div>
+            <div class="row m-l-none m-r-none m-b-n-xs text-center">
+              <div class="col-xs-4">
+                <div class="padder-v">
+                  <span class="m-b-xs h4 block text-white">245</span>
+                  <small class="text-muted">Followers</small>
+                </div>
+              </div>
+              <div class="col-xs-4 dk">
+                <div class="padder-v">
+                  <span class="m-b-xs h4 block text-white">55</span>
+                  <small class="text-muted">Likes</small>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="padder-v">
+                  <span class="m-b-xs h4 block text-white">2,035</span>
+                  <small class="text-muted">Photos</small>
+                </div>
+              </div>
+            </div>
+          </section>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right m-n hidden-xs nav-user">
+        <li class="hidden-xs">
+          <a href="#" class="dropdown-toggle dk" data-toggle="dropdown">
+            <i class="fa fa-bell"></i>
+            <span class="badge badge-sm up bg-danger m-l-n-sm count">2</span>
+          </a>
+          <section class="dropdown-menu aside-xl">
+            <section class="panel bg-white">
+              <header class="panel-heading b-light bg-light">
+                <strong>You have <span class="count">2</span> notifications</strong>
+              </header>
+              <div class="list-group list-group-alt animated fadeInRight">
+                <a href="#" class="media list-group-item">
+                  <span class="pull-left thumb-sm">
+                    <img src="images/avatar.jpg" alt="John said" class="img-circle">
+                  </span>
+                  <span class="media-body block m-b-none">
+                    Use awesome animate.css<br>
+                    <small class="text-muted">10 minutes ago</small>
+                  </span>
+                </a>
+                <a href="#" class="media list-group-item">
+                  <span class="media-body block m-b-none">
+                    1.0 initial released<br>
+                    <small class="text-muted">1 hour ago</small>
+                  </span>
+                </a>
+              </div>
+              <footer class="panel-footer text-sm">
+                <a href="#" class="pull-right"><i class="fa fa-cog"></i></a>
+                <a href="#notes" data-toggle="class:show animated fadeInRight">See all the notifications</a>
+              </footer>
+            </section>
+          </section>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <span class="thumb-sm avatar pull-left">
+              <img src="images/avatar.jpg">
+            </span>
+            Admin1 <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu animated fadeInRight">
+            <span class="arrow top"></span>
+            <li>
+              <a href="modal.lockme.html" data-toggle="ajaxModal">Logout</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <section>
+      <section class="hbox stretch">
+        <!-- .aside -->
+        <aside class="bg-dark lter aside-md hidden-print hidden-xs" id="nav">
+          <section class="vbox">
+
+            <section class="w-f scrollable">
+              <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="5px"
+                data-color="#333333">
+
+                <!-- nav -->
+                <nav class="nav-primary hidden-xs">
+                  <ul class="nav">
+                    <li class="">
+                      <a href="#" class="active">
+                        <i class="fa fa-rss-square icon">
+                          <b class="bg-danger"></b>
+                        </i>
+                        <span>Нас. пункти</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="buses.html" class="active">
+                        <i class="fa fa-columns icon">
+                          <b class="bg-warning"></b>
+                        </i>
+                        <span>Автобуси</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="add_flight.html" class="active">
+                        <i class="fa fa-flask icon">
+                          <b class="bg-success"></b>
+                        </i>
+                        <span>Додати рейс</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="flights.html" class="active">
+                        <i class="fa fa-file-text icon">
+                          <b class="bg-primary dker"></b>
+                        </i>
+                        <span>Рейси</span>
+                      </a>
+                    </li>
+                    <li class="active">
+                      <a href="#" class="active">
+                        <i class="fa fa-rss-square icon">
+                          <b class="bg-danger"></b>
+                        </i>
+                        <span>Квитки</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="active">
+                        <i class="fa fa-envelope-o icon">
+                          <b class="bg-info"></b>
+                        </i>
+                        <span>5</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <!-- / nav -->
+              </div>
+            </section>
+
+            <footer class="footer lt hidden-xs b-t b-dark">
+              <div id="chat" class="dropup">
+                <section class="dropdown-menu on aside-md m-l-n">
+                  <section class="panel bg-white">
+                    <header class="panel-heading b-b b-light">Active chats</header>
+                    <div class="panel-body animated fadeInRight">
+                      <p class="text-sm">No active chats.</p>
+                      <p><a href="#" class="btn btn-sm btn-default">Start a chat</a></p>
+                    </div>
+                  </section>
+                </section>
+              </div>
+              <div id="invite" class="dropup">
+                <section class="dropdown-menu on aside-md m-l-n">
+                  <section class="panel bg-white">
+                    <header class="panel-heading b-b b-light">
+                      John <i class="fa fa-circle text-success"></i>
+                    </header>
+                    <div class="panel-body animated fadeInRight">
+                      <p class="text-sm">No contacts in your lists.</p>
+                      <p><a href="#" class="btn btn-sm btn-facebook"><i class="fa fa-fw fa-facebook"></i> Invite from
+                          Facebook</a></p>
+                    </div>
+                  </section>
+                </section>
+              </div>
+              <a href="#nav" data-toggle="class:nav-xs" class="pull-right btn btn-sm btn-dark btn-icon">
+                <i class="fa fa-angle-left text"></i>
+                <i class="fa fa-angle-right text-active"></i>
+              </a>
+            </footer>
+          </section>
+        </aside>
+        <!-- /.aside -->
+
+        <section id="content">
+          <section class="hbox stretch">
+            <aside>
+              <section class="vbox">
+                <section class="panel panel-default">
+                  <header class="panel-heading">
+                    Квитки
+                  </header>
+
+                  <div class="row wrapper wp-date-tickets">
+                    <div class="col-sm-5 m-b-xs">
+
+                      <label class=" control-label date-tickets">Період з:</label>
+                      <div class="controls input-append date form_date" data-date="" data-date-format="dd MM yyyy"
+                        data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                        <input class="input-date input-sm input-s form-control" id="get-date" readonly="" size="16"
+                          type="text" value="">
+                        <span class="add-on"><i class="icon-th fa fa-calendar-alt"></i></span>
+                      </div>
+                      <label class=" control-label date-tickets">по:</label>
+                      <div class="controls input-append date form_date" data-date="" data-date-format="dd MM yyyy"
+                        data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                        <input class="input-date input-sm input-s form-control" id="get-date2" readonly="" size="16"
+                          type="text" value="">
+                        <span class="add-on"><i class="icon-th fa fa-calendar-alt"></i></span>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4 m-b-xs">
+                      <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-sm btn-default active">
+                          <input type="radio" name="options" id="option1"> День
+                        </label>
+                        <label class="btn btn-sm btn-default">
+                          <input type="radio" name="options" id="option2"> Тиждень
+                        </label>
+                        <label class="btn btn-sm btn-default">
+                          <input type="radio" name="options" id="option2"> Місяць
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="input-group">
+                        <input type="text" class="input-sm form-control" placeholder="Пошук">
+                        <span class="input-group-btn">
+                          <button class="btn btn-sm btn-default" type="button">Go!</button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="table-responsive">
+                    <table class="table table-striped b-t b-light">
+
+
+                      <thead>
+                        <tr>
+                          <th>Номер Квитка</th>
+                          <th>Ім'я</th>
+                          <th>Прізвище</th>
+                          <th>Номер телефону</th>
+                          <th>EMAIL</th>
+                          <th>Ціна квитка</th>
+                          <th>Рейс</th>
+                          <th>Місце</th>
+
+                          <th>Дата та час відправлення</th>
+                          <th>Відправлення з</th>
+                          <th>Прибуття у</th>
+                          <th>Статус оплати</th>
+                        </tr>
+                      </thead>
+
+
+                      <tbody>
+                        <tr>
+                          <td>3321312323</td>
+                          <td>Іван</td>
+                          <td>Пупкін</td>
+                          <td>0973978581</td>
+                          <td>132.gmail.com</td>
+                          <td>154 грн.</td>
+                          <td>777</td>
+                          <td>13</td>
+                          <td>19 10 2019 17:00</td>
+                          <td>Калуш</td>
+                          <td>Щецин</td>
+                          <td>ОК</td>
+                        </tr>
+
+                        <tr>
+                          <td>3123213215</td>
+                          <td>Оля</td>
+                          <td>Полякова</td>
+                          <td>0503894581</td>
+                          <td>cczxx.gmail.com</td>
+                          <td>154 грн.</td>
+                          <td>999</td>
+                          <td>31</td>
+                          <td>19 10 2019 17:00</td>
+                          <td>Калуш</td>
+                          <td>Варшава</td>
+                          <td>ОК</td>
+                        </tr>
+
+                        <tr>
+                          <td>4545012312</td>
+                          <td>Іван</td>
+                          <td>Пупкін</td>
+                          <td>0633891181</td>
+                          <td>sdas.gmail.com</td>
+                          <td>154 грн.</td>
+                          <td>148</td>
+                          <td>44</td>
+                          <td>19 10 2019 17:00</td>
+                          <td>Калуш</td>
+                          <td>Поз</td>
+                          <td>ОК</td>
+                        </tr>
+
+
+                      </tbody>
+
+
+                    </table>
+                  </div>
+                  <footer class="panel-footer">
+                    <div class="row">
+                      <div class="col-sm-4 hidden-xs">
+                        <small class="text-muted inline m-t-sm m-b-sm">Показано 20 з 50</small>
+                      </div>
+                      <div class="col-sm-4 text-center">
+
+                      </div>
+                      <div class="col-sm-4 text-right text-center-xs">
+                        <ul class="pagination pagination-sm m-t-none m-b-none">
+                          <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+                          <li><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </footer>
+                </section>
+
+
+
+
+
+
+              </section>
+            </aside>
+          </section>
+          <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen, open"
+            data-target="#nav,html"></a>
+        </section>
+
+        <aside class="bg-light lter b-l aside-md hide" id="notes">
+          <div class="wrapper">Notification</div>
+        </aside>
+      </section>
+    </section>
+  </section>
+
+  <script src="js/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.js"></script>
+  <!-- App -->
+  <script src="js/app.js"></script>
+  <script src="js/slimscroll/jquery.slimscroll.min.js"></script>
+  <script src="js/charts/easypiechart/jquery.easy-pie-chart.js"></script>
+  <script src="js/charts/sparkline/jquery.sparkline.min.js"></script>
+  <script src="js/charts/flot/jquery.flot.min.js"></script>
+  <script src="js/charts/flot/jquery.flot.tooltip.min.js"></script>
+  <script src="js/charts/flot/jquery.flot.resize.js"></script>
+  <script src="js/charts/flot/jquery.flot.grow.js"></script>
+  <script src="js/charts/flot/demo.js"></script>
+
+  <script src="js/calendar/bootstrap_calendar.js"></script>
+  <script src="js/calendar/demo.js"></script>
+
+  <script src="js/sortable/jquery.sortable.js"></script>
+
+
+
+  <script src="js/datepicker/bootstrap-datepicker.js"></script>
+  <script src="js/wysiwyg/bootstrap-wysiwyg.js"></script>
+  <script src="js/wysiwyg/demo.js"></script>
+
+
+  <script src="js/app.plugin.js"></script>
+
+
+
+  <script src="js/bootstrap-datetimepicker.js"></script>
+  <script src="js/bootstrap-datetimepicker.ua.js"></script>
+  <script src="js/bootstrap-datetimepicker.uk.js"></script>
+  <script type="text/javascript">
+    $('.form_datetime').datetimepicker({
+      //language:  'ua',
+      weekStart: 1,
+      todayBtn: 1,
+      autoclose: 1,
+      todayHighlight: 1,
+      startView: 2,
+      forceParse: 0,
+      showMeridian: 1
+    });
+    $('.form_date').datetimepicker({
+      language: 'uk',
+      weekStart: 1,
+      todayBtn: 1,
+      autoclose: 1,
+      todayHighlight: 1,
+      startView: 2,
+      minView: 2,
+      forceParse: 0
+    });
+    $('.form_time').datetimepicker({
+      language: 'uk',
+      weekStart: 1,
+      todayBtn: 1,
+      autoclose: 1,
+      todayHighlight: 1,
+      startView: 1,
+      minView: 0,
+      maxView: 1,
+      forceParse: 0
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $('.minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+      });
+      $('.plus').click(function () {
+        var $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+      });
+    });
+  </script>
+
+  <script>
+    const monthNames = ["Січня", "Лютого", "Березня", "Квітня", "Травня", "Червня", "Липня", "Серпня", "Вересня", "Жовтня", "Листопада", "Грудня"]
+    var day = { weekday: 'long' };
+    var wd = new Date().toLocaleDateString('uk-uk', day);
+    var dMonth = { day: 'numeric' };
+    var md = new Date().toLocaleDateString('uk-uk', dMonth);
+    var month = { month: 'long' };
+    var m = monthNames[new Date().getMonth()];
+    var year = { year: 'numeric' };
+    var y = new Date().toLocaleDateString('uk-uk', year);
+    var x = document.getElementById("get-date").value = md + " " + m + " " + y;
+    var x = document.getElementById("get-date2").value = md + " " + m + " " + y;
+  </script>
+
+
+</body>
+
+</html>

@@ -110,7 +110,8 @@
   }
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
   outline: none;
 }
 
@@ -134,9 +135,9 @@
   padding-top: 15px;
 }
 
- /*buses*/
+/*buses*/
 
- .bus-layout {
+.bus-layout {
   /*background-color: #fff;*/
   margin-bottom: 15px;
 }
@@ -439,8 +440,6 @@ ol {
 }
 /*buses end*/
 
-
-
 .add-footer-btn {
   border-top: 0;
   text-align: right;
@@ -540,7 +539,7 @@ ol {
 .wp-delete-price {
   padding-top: 5px;
   .btn-default {
-   font-size: 14px; 
+    font-size: 14px;
   }
 }
 
@@ -568,4 +567,35 @@ ol {
   .main-flights-wrapper {
     width: 100%;
   }
+}
+
+/*date-tickets*/
+.date-tickets {
+  padding-top: 7px;
+  margin-bottom: 0;
+  text-align: right;
+  padding-left: 0;  
+}
+
+.wp-date-tickets {
+.form-control {
+  display: inline-block;
+}
+  .input-s {
+    width: 130px;
+  }
+}
+
+/*tickets end*/
+
+.date {
+  display: inline-block;
+}
+
+.input-append.date .add-on i, .input-prepend.date .add-on i {
+  height: 0;
+}
+
+.datetimepicker-dropdown-bottom-right {
+  top: 141px !important;
 }
