@@ -569,18 +569,18 @@ ol {
   }
 }
 
-/*date-tickets*/
+/*tickets*/
 .date-tickets {
   padding-top: 7px;
   margin-bottom: 0;
   text-align: right;
-  padding-left: 0;  
+  padding-left: 0;
 }
 
 .wp-date-tickets {
-.form-control {
-  display: inline-block;
-}
+  .form-control {
+    display: inline-block;
+  }
   .input-s {
     width: 130px;
   }
@@ -592,10 +592,40 @@ ol {
   display: inline-block;
 }
 
-.input-append.date .add-on i, .input-prepend.date .add-on i {
+.input-append.date .add-on i,
+.input-prepend.date .add-on i {
   height: 0;
 }
 
 .datetimepicker-dropdown-bottom-right {
   top: 141px !important;
 }
+
+/*settings*/
+/*
+.wp-settings {
+  label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+  }
+}
+*/
+.wp-settings {
+  label {
+    margin-bottom: 5px;
+  }
+  #MyPillbox, #epiceditor, .input-s {
+    margin-bottom: 15px;
+  }
+}
+.pillbox  {
+  input {
+    border: 1px solid #e0e4e8;
+    margin-top: 1px;
+    padding: 3px;
+  }  
+}
+
+
+/*tickets end*/
