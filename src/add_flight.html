@@ -820,6 +820,16 @@
 
                 </div>
               </section>
+
+              <section class="panel panel-default panel-departure wp-control-date">
+                <header class="panel-heading font-bold">Вихідні та святкові дні</header>
+                <div class="panel-body">
+                  <input type="text" class="form-control date"
+                    placeholder="Перелік дат у які рейс не буде відображаться для покупки квитків">
+                    <p>Перелік дат у які рейс не буде відображатись для покупки квитків</p>
+                </div>
+              </section>
+
               <div class="add-footer-btn">
                 <button type="submit" class="btn btn-default">Закрити</button>
                 <button type="submit" class="btn btn-primary">Зберегти</button>
@@ -839,6 +849,14 @@
   </section>
 
   <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script>
+    $('.date').datepicker({
+      multidate: true,
+      format: 'dd-mm-yyyy'
+    });
+  </script>
+
   <!-- Bootstrap -->
   <script src="js/bootstrap.js"></script>
   <!-- App -->

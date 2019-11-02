@@ -602,30 +602,54 @@ ol {
 }
 
 /*settings*/
-/*
-.wp-settings {
-  label {
-    padding-top: 7px;
-    margin-bottom: 0;
-    text-align: right;
-  }
-}
-*/
+
 .wp-settings {
   label {
     margin-bottom: 5px;
   }
-  #MyPillbox, #epiceditor, .input-s {
+  #MyPillbox,
+  #epiceditor,
+  .input-s {
     margin-bottom: 15px;
   }
 }
-.pillbox  {
+.pillbox {
   input {
     border: 1px solid #e0e4e8;
     margin-top: 1px;
     padding: 3px;
-  }  
+  }
 }
 
-
 /*tickets end*/
+
+.datepicker table tr td span {
+  display: block;
+  width: 23%;
+  height: 54px;
+  line-height: 54px;
+  float: left;
+  margin: 1%;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.datepicker .datepicker-switch {
+  width: 145px !important;
+}
+
+.datepicker {
+  &::before,
+  &::after {
+    display: none !important;
+  }
+}
+
+.wp-control-date {
+  p {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+}
