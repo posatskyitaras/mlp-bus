@@ -24,7 +24,7 @@
   <![endif]-->
 </head>
 
-<body class="">
+<body class="body-date-tickets">
   <section class="vbox">
     <header class="bg-dark dk header navbar navbar-fixed-top-xs">
       <div class="navbar-header aside-md">
@@ -238,6 +238,7 @@
                   <div class="row wrapper wp-date-tickets">
                     <div class="col-sm-5 m-b-xs">
                       <label class=" control-label date-tickets">Період з:</label>
+
                       <div class="controls input-append date form_date" data-date="" data-date-format="dd MM yyyy"
                         data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
                         <input class="input-date input-sm input-s form-control" id="get-date" readonly="" size="16"
@@ -245,12 +246,14 @@
                         <span class="add-on"><i class="icon-th fa fa-calendar-alt"></i></span>
                       </div>
                       <label class=" control-label date-tickets">по:</label>
+
                       <div class="controls input-append date form_date" data-date="" data-date-format="dd MM yyyy"
                         data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
                         <input class="input-date input-sm input-s form-control" id="get-date2" readonly="" size="16"
                           type="text" value="">
                         <span class="add-on"><i class="icon-th fa fa-calendar-alt"></i></span>
                       </div>
+                      <button type="apply" class="btn btn-default apply-button">Застосувати</button>
                     </div>
                     <div class="col-sm-4 m-b-xs">
                       <div class="btn-group" data-toggle="buttons">
@@ -292,6 +295,7 @@
                           <th>Відправлення з</th>
                           <th>Прибуття у</th>
                           <th>Статус оплати</th>
+                          <th> </th>
                         </tr>
                       </thead>
                       <tbody>
@@ -309,6 +313,12 @@
                           <td>Калуш</td>
                           <td>Щецин</td>
                           <td>ОК</td>
+                          <td>
+                            <a href="#" onclick="return confirm('Ви впевнені ?')" class="btn btn-danger btn-sm"
+                              data-toggle="tooltip" data-placement="left" data-original-title="Видалити">
+                              <i class="fa fa-trash-o"></i>
+                            </a>
+                          </td>
                         </tr>
                         <tr>
                           <td>3123213215</td>
@@ -324,6 +334,12 @@
                           <td>Калуш</td>
                           <td>Варшава</td>
                           <td>ОК</td>
+                          <td>
+                            <a href="#" onclick="return confirm('Ви впевнені ?')" class="btn btn-danger btn-sm"
+                              data-toggle="tooltip" data-placement="left" data-original-title="Видалити">
+                              <i class="fa fa-trash-o"></i>
+                            </a>
+                          </td>
                         </tr>
                         <tr>
                           <td>4545012312</td>
@@ -339,6 +355,12 @@
                           <td>Калуш</td>
                           <td>Поз</td>
                           <td>ОК</td>
+                          <td>
+                            <a href="#" onclick="return confirm('Ви впевнені ?')" class="btn btn-danger btn-sm"
+                              data-toggle="tooltip" data-placement="left" data-original-title="Видалити">
+                              <i class="fa fa-trash-o"></i>
+                            </a>
+                          </td>
                         </tr>
                       </tbody>
                     </table>

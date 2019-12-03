@@ -584,8 +584,21 @@ ol {
   .input-s {
     width: 130px;
   }
+  .apply-button {
+   height: 31px;
+   padding: 5px 10px;
+   font-size: 12px;
+   line-height: 1.5;
+  }
 }
 
+.body-date-tickets {
+  .datetimepicker-dropdown-bottom-right { 
+    top: 141px!important;
+    margin-left: -142px;
+   /* left: 408px !important; */
+  }
+}
 /*tickets end*/
 
 .date {
@@ -595,10 +608,6 @@ ol {
 .input-append.date .add-on i,
 .input-prepend.date .add-on i {
   height: 0;
-}
-
-.datetimepicker-dropdown-bottom-right {
-  top: 141px !important;
 }
 
 /*settings*/
